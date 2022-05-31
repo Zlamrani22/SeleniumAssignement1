@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="automationpractice smoke">
+    <parameter name="url" value="http://automationpractice.com/"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="os" value="mac"></parameter>
+    <test name="testHomepage">
+        <classes>
+            <class name="app.automationpractice.testHomepage"></class>
+        </classes>
+    </test>
+</suite>
