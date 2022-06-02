@@ -5,7 +5,8 @@
     <parameter name="url" value="http://automationpractice.com/"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="mac"></parameter>
-    <test name="testHomepage">
+
+    <test name="automationpractice">
         <classes>
             <class name="app.automationpractice.testHomepage"></class>
         </classes>
