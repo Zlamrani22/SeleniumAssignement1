@@ -7,7 +7,21 @@
     <parameter name="os" value="mac"></parameter>
     <test name="testHomepage">
         <classes>
-            <class name="app.automationpractice.testHomepage"></class>
+            <class name="app.automationpractice.TestHomepage"></class>
         </classes>
+
+        <classes>
+            <class name="app.automationpractice.TestAuthentication"></class>
+        </classes>
+        <classes>
+            <class name=""></class>
+        </classes>
+        <!--        <classes>-->
+        <!--            <class name="app.automationpractice.testHomepage"></class>-->
+        <!--        </classes>-->
+        <!--        <automationPractice name="dropdown amazon">-->
+        <!--                <classes>-->
+        <!--            <class name="amazon.DropdownTest"></class>-->
+        <!--        </classes>-->
     </test>
 </suite>
