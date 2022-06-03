@@ -2,13 +2,112 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="amazon smoke amazon">
-    <parameter name="url" value="https://wwww.ebay.com"></parameter>
+    <parameter name="url" value="https://www.ebay.com/"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="windows"></parameter>
-    <test name="floating menu amazon">
-<!--        <classes>-->
-<!--            <class name=""></class>-->
-<!--        </classes>-->
-
+    <test name="AddToCartOnEbay">
+        <classes>
+            <class name="app.ebay.AddToCartOnEbay"></class>
+        </classes>
+    </test>
+    <test name="test1">
+    <classes>
+        <class name="app.ebay.ForgotUserIdFunctionality"></class>
+    </classes>
+    </test>
+    <test name="test2">
+        <classes>
+            <class name="app.ebay.ForgotUserIdFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test3">
+    <classes>
+            <class name="app.ebay.SearchProduct"></class>
+    </classes>
+    </test>
+    <test name="test4">
+        <classes>
+            <class name="app.ebay.testHomepage"></class>
+        </classes>
+    </test>
+    <test name="test5">
+        <classes>
+            <class name="app.ebay.ForgotPasswordFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test6">
+        <classes>
+            <class name="app.ebay.SellingFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test7">
+        <classes>
+            <class name="app.ebay.ShopByGategory"></class>
+        </classes>
+    </test>
+    <test name="test8">
+        <classes>
+            <class name="app.ebay.InvalidSinginFuctionality"></class>
+        </classes>
+    </test>
+    <test name="test9">
+        <classes>
+            <class name="app.ebay.ValidEmailFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test10">
+        <classes>
+            <class name="app.ebay.HelpAndContactFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test11">
+        <classes>
+            <class name="app.ebay.ForgotUserIdFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test12">
+        <classes>
+            <class name="app.ebay.SingoutFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test13">
+        <classes>
+            <class name="app.ebay.PaymentFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test14">
+        <classes>
+            <class name="app.ebay.DailysDealFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test15">
+        <classes>
+            <class name="app.ebay.BrandOutlet"></class>
+        </classes>
+    </test>
+    <test name="test16">
+        <classes>
+            <class name="app.ebay.CloseAccountFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test17">
+        <classes>
+            <class name="app.ebay.InboxMessageFunctionality"></class>
+        </classes>
+    </test>
+    <test name="test18">
+        <classes>
+            <class name="app.ebay.AdvancedSearch"></class>
+        </classes>
+    </test>
+    <test name="test19">
+        <classes>
+            <class name="app.ebay.MyEbay"></class>
+        </classes>
+    </test>
+    <test name="test20">
+        <classes>
+            <class name="app.ebay.Toys"></class>
+        </classes>
     </test>
 </suite>
