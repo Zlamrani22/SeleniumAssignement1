@@ -13,7 +13,7 @@ public class AccessDM extends CommonAPI {
             Assert.assertEquals(expectedTestngPageTitle, getPageTitle());
 
         }
-    @Test(enabled = false)
+    @Test
         public void aMessages(){
            selectFromDropdown("//section[@class='-oneX-header-nav-apps-container']/div/div/button/img","Messages");
            click("");
