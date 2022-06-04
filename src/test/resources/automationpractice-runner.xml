@@ -5,28 +5,33 @@
     <parameter name="url" value="http://automationpractice.com/"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="mac"></parameter>
-<<<<<<< HEAD
+
     <test name="testHomepage">
-<!--        <classes>-->
-<!--            <class name="app.automationpractice.TestHomepage"></class>-->
-<!--        </classes>-->
+        <classes>
+            <class name="app.automationpractice.Homepage"></class>
+        </classes>
+    </test>
 
-<!--        <classes>-->
-<!--            <class name="app.automationpractice.TestAuthentication"></class>-->
-<!--        </classes>-->
-=======
+    <test name="testAuthentication">
+        <classes>
+            <class name="app.automationpractice.TestAuthentication"></class>
+        </classes>
+    </test>
 
-    <test name="automationpractice">
->>>>>>> 8bfd8d05779e36b98d9f10e7515780aa7a9df686
+    <test name="testAddToCart">
         <classes>
             <class name="app.automationpractice.TestAddToCart"></class>
         </classes>
-        <!--        <classes>-->
-        <!--            <class name="app.automationpractice.testHomepage"></class>-->
-        <!--        </classes>-->
-        <!--        <automationPractice name="dropdown amazon">-->
-        <!--                <classes>-->
-        <!--            <class name="amazon.DropdownTest"></class>-->
-        <!--        </classes>-->
+    </test>
+
+<test name="tesRedfinHomePage">
+        <classes>
+            <class name="app.redfin.RedfinHomepage"></class>
+        </classes>
+    </test>
+    <test name="testSearchForRentals">
+        <classes>
+            <class name="app.redfin.TestRentals"></class>
+        </classes>
     </test>
 </suite>

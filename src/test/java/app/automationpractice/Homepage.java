@@ -5,10 +5,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestHomepage extends CommonAPI {
-        public void main(String[] args) {
-            System.out.println();
-        }
+public class Homepage extends CommonAPI {
 
         @Test
         public void testSearchFunctionality() {

@@ -1,7 +1,6 @@
 package app.automationpractice;
 
 import base.CommonAPI;
-<<<<<<< HEAD
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -37,9 +36,3 @@ public class TestAuthentication extends CommonAPI {
  * as it exceeded resource limit. Please try again later.
  */
 
-=======
-
-public class TestAuthentication extends CommonAPI {
-
-}
->>>>>>> 8bfd8d05779e36b98d9f10e7515780aa7a9df686

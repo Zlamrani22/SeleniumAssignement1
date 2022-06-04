@@ -14,6 +14,7 @@ public class TestAddToCart extends CommonAPI {
         hoverOver("//*[@id='block_top_menu']/ul/li[2]/a");
         click("//*[@id='block_top_menu']/ul/li[2]/ul/li[1]/a");
         click("input[id='layered_id_attribute_group_1'");//checks the box for 'S' size
+        click("//*[@id='center_column']/ul/li/div/div[1]/div/a[1]/img");
         click("//span[text()='Add to cart']");
 
         String actualMessage = driver.findElement(By.xpath("//*[text()[contains(.,'Product successfully added to your shopping cart')]]")).getText();
