@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -101,7 +102,7 @@ public class CommonAPI {
         }
     }
 
-    public void selectFromDropdown(String dropdownLocator, String option){
+    public void selectFromDropdown(String dropdownLocator){
         WebElement dropdown;
         try {
             dropdown = driver.findElement(By.cssSelector(dropdownLocator));
@@ -142,6 +143,10 @@ public class CommonAPI {
                 driver.switchTo().window(handle);
             }
         }
+    }
+
+    public void navigateBack(){
+        driver.navigate().back();
     }
 
 }

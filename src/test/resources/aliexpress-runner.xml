@@ -5,6 +5,7 @@
     <parameter name="url" value="https://wwww.aliexpress.com"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="windows"></parameter>
+
 <!--    <test name="login1 aliexpress">-->
 <!--               <classes>-->
 <!--                 <class name="app.aliexpress.TestLoginAliexpress"></class>-->
@@ -19,6 +20,14 @@
         <classes>
             <class name="app.aliexpress.SearchTest"></class>
         </classes>
+
+    <test name="ailexpress">
+                <classes>
+                    <class name="app.aliexpress.testHomepage"></class>
+
+                </classes>
+
+
     </test>
 
 
