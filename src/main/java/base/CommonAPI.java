@@ -84,13 +84,14 @@ public class CommonAPI {
         }
     }
 
-    public void type(String locator, String text){
+    public String type(String locator, String text){
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(text);
         }catch (Exception e){
             driver.findElement(By.xpath(locator)).sendKeys(text);
         }
 
+        return locator;
     }
 
     public void typeAndEnter(String locator, String text){
