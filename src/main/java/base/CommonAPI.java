@@ -100,7 +100,7 @@ public class CommonAPI {
         }
     }
 
-    public void selectFromDropdown(String dropdownLocator, String option){
+    public void selectFromDropdown(String dropdownLocator){
         WebElement dropdown;
         try {
             dropdown = driver.findElement(By.cssSelector(dropdownLocator));

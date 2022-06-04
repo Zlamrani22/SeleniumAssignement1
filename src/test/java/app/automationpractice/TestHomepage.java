@@ -20,7 +20,15 @@ public class TestHomepage extends CommonAPI {
             Assert.assertEquals(actualSearchText, expectedSearchText);
             //Assert.assertEquals("Printed Summer Dress", expectedSearchText);
         }
+        @Test
+        public void testSearchInvalidClothingItem() {
+            type("input[id='search_query_top']", "Jeans");
+            click("button[name='submit_search']");
 
+            String actualMessage = driver.findElement(By.cssSelector("p[class='alert alert-warning']")).getText();
+            String expectedMessage = "No results were found for your search \"Jeans\"";
+            Assert.assertEquals(actualMessage, expectedMessage);
+        }
         @Test
         public void testBestSellers() {
             click("a[class='blockbestsellers']");
@@ -30,7 +38,6 @@ public class TestHomepage extends CommonAPI {
             String expected = "Unlock the full potential of your ecommerce";
             Assert.assertEquals(actual, expected);
         }
-
         @Test
         public void testSummerCollection() {
             click("img[src='http://automationpractice.com/modules/themeconfigurator/img/banner-img7.jpg']");
@@ -41,13 +48,5 @@ public class TestHomepage extends CommonAPI {
             Assert.assertEquals(actual, expected);
         }
 
-        @Test
-        public void testSearchInvalidClothingItem() {
-            type("input[id='search_query_top']", "Jeans");
-            click("button[name='submit_search']");
 
-            String actualMessage = driver.findElement(By.cssSelector("p[class='alert alert-warning']")).getText();
-            String expectedMessage = "No results were found for your search \"Jeans\"";
-            Assert.assertEquals(actualMessage, expectedMessage);
-        }
     }
