@@ -9,7 +9,7 @@ public class TestContactCustomerService extends CommonAPI {
     @Test
     public void testContactUs(){
         click("//*[@title='Contact Us']");
-        selectFromDropdown("//select[@id='id_contact']");
+        selectFromDropdown("//select[@id='id_contact']", "");
         typeAndEnter("//input[@id='email']", "tedefi_01@yahoo.fr");
         typeAndEnter("//*[@id='id_order']", "orderrefnumber");
         typeAndEnter("//*[@id='message']", "This is an automation test");
