@@ -1,15 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="amazon smoke amazon">
-    <parameter name="url" value="https://wwww.statefarm.com"></parameter>
+<suite name="smoke statefarm ">
+    <parameter name="url" value="https://www.statefarm.com/"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="windows"></parameter>
-    <test name="floating menu amazon">
-<!--        <classes>-->
-<!--            <class name="">-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--        -->
+    <test name="login1">
+       <classes>
+           <class name="app.statefarm.TestLogin"></class>
+       </classes>
     </test>
+    <test name="login2">
+        <classes>
+            <class name="app.statefarm.TestLogin"></class>
+        </classes>
+    </test>
+    <test name="Quote">
+        <classes>
+            <class name="app.statefarm.TestQuotePayBill"></class>
+        </classes>
+    </test>
+    <test name="PayBill">
+        <classes>
+            <class name="app.statefarm.TestQuotePayBill"></class>
+        </classes>
+    </test>
+    <test name="openAccountCd">
+        <classes>
+            <class name="app.statefarm.TestAccount"></class>
+        </classes>
+    </test>
+    <test name="openCheckingA">
+        <classes>
+            <class name="app.statefarm.TestAccount"></class>
+        </classes>
+    </test>
+    <test name="aDocument">
+        <classes>
+            <class name="app.statefarm.AccessDM"></class>
+        </classes>
+    </test>
+    <test name="aMessages">
+        <classes>
+            <class name="app.statefarm.AccessDM"></class>
+        </classes>
+    </test>
+    <test name="paperless">
+        <classes>
+            <class name="app.statefarm.GoPaperLess"></class>
+        </classes>
+    </test>
+    <test name="findAgent">
+        <classes>
+            <class name="app.statefarm.Search"></class>
+        </classes>
+    </test>
+
+
 </suite>
