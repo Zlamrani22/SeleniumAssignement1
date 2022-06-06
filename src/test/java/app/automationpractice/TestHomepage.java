@@ -1,16 +1,18 @@
 package app.automationpractice;
 
+import apps.automationpractice.HomePage;
 import base.CommonAPI;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Homepage extends CommonAPI {
+public class TestHomepage extends CommonAPI {
 
         @Test
         public void testSearchFunctionality() {
-            type("input[id='search_query_top']", "long dresses");
-            click("button[name='submit_search']");
+            HomePage homePage = new HomePage(driver);
+            homePage.searchInputField("long dresses");
+            homePage.clickSearchButton();
 
             String expectedSearchText = "LONG DRESSES";
             String actualSearchText = driver.findElement(By.cssSelector("span[class='lighter']")).getText();
@@ -19,8 +21,9 @@ public class Homepage extends CommonAPI {
         }
         @Test
         public void testSearchInvalidClothingItem() {
-            type("input[id='search_query_top']", "Jeans");
-            click("button[name='submit_search']");
+            HomePage homePage = new HomePage(driver);
+            homePage.searchInputField("Jeans");
+            homePage.clickSearchButton();
 
             String actualMessage = driver.findElement(By.cssSelector("p[class='alert alert-warning']")).getText();
             String expectedMessage = "No results were found for your search \"Jeans\"";
@@ -28,8 +31,9 @@ public class Homepage extends CommonAPI {
         }
         @Test
         public void testBestSellers() {
-            click("a[class='blockbestsellers']");
-            click("img[src='http://automationpractice.com/modules/themeconfigurator/img/banner-img4.jpg']");
+            HomePage homePage = new HomePage(driver);
+            homePage.clickBestSellers();
+            homePage.clickSearchButton();
 
             String actual = driver.getTitle();
             String expected = "Unlock the full potential of your ecommerce";
@@ -37,8 +41,9 @@ public class Homepage extends CommonAPI {
         }
         @Test
         public void testSummerCollection() {
-            click("img[src='http://automationpractice.com/modules/themeconfigurator/img/banner-img7.jpg']");
-            click("//div[@class='popup-link prestashop-link primary-link secondary-os-font-bold']/a[@href='https://www.prestashop.com/en/download']");
+            HomePage homePage = new HomePage(driver);
+            homePage.summerCollection();
+            homePage.prestaShopDownloadButton();
 
             String actual = driver.getTitle();
             String expected = "Download PrestaShop";

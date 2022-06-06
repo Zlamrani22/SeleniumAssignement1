@@ -8,30 +8,20 @@
 
     <test name="testHomepage">
         <classes>
-            <class name="app.automationpractice.Homepage"></class>
+            <class name="app.automationpractice.TestHomepage"></class>
         </classes>
     </test>
 
-    <test name="testAuthentication">
-        <classes>
-            <class name="app.automationpractice.TestAuthentication"></class>
-        </classes>
-    </test>
+<!--    <test name="testAuthentication">-->
+<!--        <classes>-->
+<!--            <class name="app.automationpractice.TestAuthentication"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="testAddToCart">
-        <classes>
-            <class name="app.automationpractice.TestAddToCart"></class>
-        </classes>
-    </test>
+<!--    <test name="testAddToCart">-->
+<!--        <classes>-->
+<!--            <class name="app.automationpractice.TestAddToCart"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-<test name="tesRedfinHomePage">
-        <classes>
-            <class name="app.redfin.RedfinHomepage"></class>
-        </classes>
-    </test>
-    <test name="testSearchForRentals">
-        <classes>
-            <class name="app.redfin.TestRentals"></class>
-        </classes>
-    </test>
 </suite>

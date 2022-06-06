@@ -1,4 +1,4 @@
-package app.aliexpress;
+package app.cargurus;
 
 import base.CommonAPI;
 

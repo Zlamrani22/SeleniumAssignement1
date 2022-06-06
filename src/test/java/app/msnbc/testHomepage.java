@@ -1,4 +1,4 @@
-package app.abcnews;
+package app.msnbc;
 
 import base.CommonAPI;
 

@@ -7,7 +7,7 @@
     <parameter name="os" value="windows"></parameter>
     <test name="ailexpress">
                 <classes>
-                    <class name="app.aliexpress.testHomepage"></class>
+                    <class name="app.cargurus.testHomepage"></class>
 
                 </classes>
 
