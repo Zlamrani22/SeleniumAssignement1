@@ -101,7 +101,7 @@ public class CommonAPI {
         }
     }
 
-    public void selectFromDropdown(String dropdownLocator){
+    public void selectFromDropdown(String dropdownLocator, String option){
         WebElement dropdown;
         try {
             dropdown = driver.findElement(By.cssSelector(dropdownLocator));
@@ -110,7 +110,7 @@ public class CommonAPI {
             dropdown = driver.findElement(By.xpath(dropdownLocator));
         }
         Select select = new Select(dropdown);
-        //select.selectByVisibleText(option);
+        select.selectByVisibleText(option);
     }
 
     public void hoverOver(String locator){
