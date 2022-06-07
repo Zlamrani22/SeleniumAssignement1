@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="amazon smoke amazon">
+<suite name="aliexpress smoke testing">
     <parameter name="url" value="https://wwww.aliexpress.com"></parameter>
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="os" value="windows"></parameter>
+
+<!--    <test name="login1 aliexpress">-->
+<!--               <classes>-->
+<!--                 <class name="app.aliexpress.TestLoginAliexpress"></class>-->
+<!--                </classes>-->
+<!--    </test>-->
+<!--    <test name="login2 aliexpress">-->
+<!--        <classes>-->
+<!--            <class name="app.aliexpress.TestLoginAliexpress"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="search">
+        <classes>
+            <class name="app.aliexpress.SearchTest"></class>
+        </classes>
+
     <test name="ailexpress">
                 <classes>
                     <class name="app.cargurus.testHomepage"></class>
 
                 </classes>
 
+
     </test>
+
+
+
+
+
 </suite>

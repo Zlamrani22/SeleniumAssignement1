@@ -1,4 +1,4 @@
-package app.statefarm;
+package app.stateFarm;
 
 import base.CommonAPI;
 

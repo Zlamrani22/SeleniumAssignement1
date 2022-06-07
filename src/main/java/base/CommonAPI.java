@@ -1,5 +1,4 @@
 package base;
-
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -284,22 +283,6 @@ public class CommonAPI {
             System.out.println(path);
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
-    }
-
-    public void switchTabs() {
-        String parentHandle = driver.getWindowHandle();
-
-        Set<String> windowHandles = driver.getWindowHandles();
-
-        for (String handle : windowHandles) {
-            if (!handle.equals(parentHandle)) {
-                driver.switchTo().window(handle);
-            }
-        }
-    }
-
-    public void navigateBack(){
-        driver.navigate().back();
     }
 
 }
