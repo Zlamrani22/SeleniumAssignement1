@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="abcnews smoke tests">
+    <parameter name="url" value="https://www.msnbc.com/"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <test name="Search test">
+        <classes>
+            <class name="app.msnbc.SearchTest"></class>
+        </classes>
+    </test>
+    <test name="Main Tabs test">
+        <classes>
+            <class name="app.msnbc.MainTabsTests"></class>
+        </classes>
+    </test>
+    <test name="podcast test">
+        <classes>
+            <class name="app.msnbc.PodcastTests"></class>
+        </classes>
+    </test>
+    <test name="Follow page test">
+        <classes>
+            <class name="app.msnbc.FollowPageTest"></class>
+        </classes>
+    </test>
+    <test name="Video test">
+        <classes>
+            <class name="app.msnbc.VideoTest"></class>
+        </classes>
+    </test>
+    <test name="Cart test">
+        <classes>
+            <class name="app.msnbc.AddToCartTests"></class>
+        </classes>
+    </test>
+    <test name="Sign up newsletter test">
+        <classes>
+            <class name="app.msnbc.SignUpTests"></class>
+        </classes>
+    </test>
+    <test name="Dropdown tests">
+        <classes>
+            <class name="app.msnbc.DropdownMenuTests"></class>
+        </classes>
+    </test>
+
+
+</suite>

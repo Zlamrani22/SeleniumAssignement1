@@ -2,6 +2,10 @@ package app.ebay;
 
 import base.CommonAPI;
 
+
+public class testHomepage extends CommonAPI {
+}
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,6 +27,7 @@ public class testHomepage extends CommonAPI {
 
     }
 }
+
 
 
 
