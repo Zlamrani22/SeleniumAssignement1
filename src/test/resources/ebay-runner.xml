@@ -10,11 +10,6 @@
             <class name="app.ebay.AddToCartOnEbay"></class>
         </classes>
     </test>
-    <test name="test1">
-    <classes>
-        <class name="app.ebay.ForgotUserIdFunctionality"></class>
-    </classes>
-    </test>
     <test name="test2">
         <classes>
             <class name="app.ebay.ForgotUserIdFunctionality"></class>

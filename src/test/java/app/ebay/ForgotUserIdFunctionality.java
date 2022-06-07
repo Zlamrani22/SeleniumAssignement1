@@ -10,7 +10,7 @@ public class ForgotUserIdFunctionality extends CommonAPI {
 
     @Test
     public void test1() {
-        click("<input id=\"userid\" class=\"textbox__control textbox__control--fluid\" type=\"text\" value=\"\" name=\"userid\" maxlength=\"64\" autocomplete=\"username\">");
+        click("need-help-signin-link");
         type("text", "name=\"userid\"");
         String expectedForgotUserId = "ebay.com :ForgotUserId";
         Assert.assertEquals(expectedForgotUserId, getPageTitle());
