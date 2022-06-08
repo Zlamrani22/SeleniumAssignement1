@@ -10,51 +10,51 @@
            <class name="app.statefarm.TestLogin"></class>
        </classes>
     </test>
-    <test name="login2">
-        <classes>
-            <class name="app.statefarm.TestLogin"></class>
-        </classes>
-    </test>
-    <test name="Quote">
-        <classes>
-            <class name="app.statefarm.TestQuotePayBill"></class>
-        </classes>
-    </test>
-    <test name="PayBill">
-        <classes>
-            <class name="app.statefarm.TestQuotePayBill"></class>
-        </classes>
-    </test>
-    <test name="openAccountCd">
-        <classes>
-            <class name="app.statefarm.TestAccount"></class>
-        </classes>
-    </test>
-    <test name="openCheckingA">
-        <classes>
-            <class name="app.statefarm.TestAccount"></class>
-        </classes>
-    </test>
-    <test name="aDocument">
-        <classes>
-            <class name="app.statefarm.AccessDM"></class>
-        </classes>
-    </test>
-    <test name="aMessages">
-        <classes>
-            <class name="app.statefarm.AccessDM"></class>
-        </classes>
-    </test>
-    <test name="paperless">
-        <classes>
-            <class name="app.statefarm.GoPaperLess"></class>
-        </classes>
-    </test>
-    <test name="findAgent">
-        <classes>
-            <class name="app.statefarm.Search"></class>
-        </classes>
-    </test>
+<!--    <test name="login2">-->
+<!--        <classes>-->
+<!--            <class name="app.statefarm.TestLogin"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Quote">-->
+<!--        <classes>-->
+<!--            <class name="app.statefarm.TestQuotePayBill"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="PayBill">-->
+<!--        <classes>-->
+<!--            <class name="app.statefarm.TestQuotePayBill"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="openAccountCd">-->
+<!--        <classes>-->
+<!--            <class name="app.statefarm.TestAccount"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="openCheckingA">-->
+<!--        <classes>-->
+<!--            <class name="app.statefarm.TestAccount"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="aDocument">-->
+<!--        <classes>-->
+<!--            <class name="app.statefarm.AccessDM"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="aMessages">-->
+<!--        <classes>-->
+<!--            <class name="app.statefarm.AccessDM"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="paperless">-->
+<!--        <classes>-->
+<!--            <class name="app.statefarm.GoPaperLess"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="findAgent">-->
+<!--        <classes>-->
+<!--            <class name="app.statefarm.Search"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -51,7 +52,7 @@ public class CommonAPI {
 
     @Parameters({"url","browser","os"})
     @BeforeMethod
-    public void setUp(@Optional("https://www.google.com") String url, @Optional("chrome") String browser, @Optional("windows") String os){
+    public void setUp(@Optional("https://google.com") String url, @Optional("chrome") String browser, @Optional("windows") String os){
         getDriver(browser, os);
         driver.get(url);
         driver.manage().window().maximize();
@@ -83,13 +84,14 @@ public class CommonAPI {
         }
     }
 
-    public void type(String locator, String text){
+    public String type(String locator, String text){
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(text);
         }catch (Exception e){
             driver.findElement(By.xpath(locator)).sendKeys(text);
         }
 
+        return locator;
     }
 
     public void typeAndEnter(String locator, String text){
@@ -141,6 +143,10 @@ public class CommonAPI {
                 driver.switchTo().window(handle);
             }
         }
+    }
+
+    public void navigateBack(){
+        driver.navigate().back();
     }
 
 }

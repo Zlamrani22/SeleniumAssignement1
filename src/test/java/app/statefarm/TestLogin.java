@@ -12,16 +12,16 @@ public class TestLogin extends CommonAPI {
         String text = getElementText("//div[text()='Log in to view and manage your account.']");
         Assert.assertEquals(expectedText, text);
         type("//input[@autocomplete='username']", "Aksel1506");
-        typeAndEnter("//input[@id='util-login-password']", "TestCase@java6");
-       // click("//button[text()='Log in']");
+        type("//input[@id='util-login-password']", "TestCase@java6");
+        click(".-oneX-util-login-button.-oneX-btn-primary.-oneX-btn-fit-content");
         waitFor(8);
-//        String expectedText1 = "Hi, Salem";
-//        String text1 = getElementText("//*[text()='Hi, Salem']");
-//        Assert.assertEquals(expectedText1,text1);
+//      String expectedText1 = "Hi, Salem";
+//      String text1 = getElementText("//*[text()='Hi, Salem']");
+//      Assert.assertEquals(expectedText1,text1);
 
     }
 
-    @Test
+   @Test
     public void login2() {
         click("//*[text()='Log in']");
         String expectedText = "Log in to view and manage your account.";
